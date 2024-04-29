@@ -1,0 +1,61 @@
+.work-panel {
+    position: relative;
+    top: 100px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    width: 100%;
+    margin-bottom: 100px;
+}
+
+.work-panel .top-panel, .work-panel .bottom-panel {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 50vh;
+    width: 130%;
+}
+
+.work-panel .top-panel .panel, .work-panel .bottom-panel .panel {
+    height: 40vh;
+    width: 24%;
+}
+
+.work-panel .top-panel .panel video,
+ .work-panel .bottom-panel .panel video,
+  .work-panel .top-panel .panel img ,
+   .work-panel .bottom-panel .panel img {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    width: 100%;
+}
+
+.work-panel button {
+    margin: 30px 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 50px;
+    width: 250px;
+    border: none;
+    outline: none;
+    border-radius: 10px;
+    background-color: rgba(255, 255, 255, 0.7);
+    backdrop-filter: blur(1px);
+    box-shadow: 0px -2px 5px rgba(0, 0, 0, 0.4);
+    letter-spacing: 3px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, box-shadow 0.3s ease; /* Added transition properties */
+  
+    /* New hover effects */
+    &:hover {
+      background-color: rgba(255, 255, 255, 0.9); /* Lighten the background color on hover */
+      box-shadow: 0px -2px 10px rgba(0, 0, 0, 0.6); /* Increase the shadow size on hover */
+    }
+  }
+  
+  

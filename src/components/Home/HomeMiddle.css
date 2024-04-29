@@ -1,0 +1,110 @@
+@keyframes raindropAnimation {
+    0% {
+      transform: translateY(100%);
+      opacity: 0;
+    }
+    100% {
+      transform: translateY(0);
+      opacity: 1;
+    }
+}
+
+.glimpse-container {
+    position: relative;
+    top: 0;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 40vh;
+    width: 100%;
+}
+  
+.glimpse-container .glimpse-animation {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 50%;
+    letter-spacing: 3px;
+    position: relative;
+    height: 200px;
+}
+  
+.glimpse-container .glimpse-animation h5 {
+    position: absolute;
+    width: 180px;
+    text-align: center;
+    color: var(--text-color); 
+    border-radius: 5px;
+}
+  
+.glimpse-container .glimpse-animation h5:nth-child(1) {
+    bottom: 15px;
+    text-shadow: 0px -2px 5px rgba(0, 0, 0, 0.8);
+}
+  
+.glimpse-container .glimpse-animation h5:nth-child(2) {
+    translate: 50px -20px;
+    transform: rotateZ(60deg);
+    text-shadow: 0px -2px 5px rgba(0, 0, 0, 0.8);
+}
+  
+.glimpse-container .glimpse-animation h5:nth-child(3) {
+    translate: -50px -20px;
+    transform: rotateZ(-60deg);
+    text-shadow: 0px -2px 5px rgba(0, 0, 0, 0.8);
+}
+
+.glimpse-container .glimpse-description {
+    /* Other styles */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 30%;
+    color: var(--icon-color);
+
+    /* Initial styles for animation */
+    opacity: 0;
+    transform: translateY(100%);
+    transition: opacity 0.3s ease, transform 0.3s ease;
+  
+    /* Add animation class when triggered */
+    &.raindrop-animation {
+      animation: raindropAnimation 0.5s ease forwards;
+    }
+}
+
+.glimpse-container .glimpse-description h1 {
+    font-size: 3rem;
+}
+
+
+@media (max-width:900px) {
+    .glimpse-container .glimpse-animation h5 {
+        font-size: 1rem;
+    }
+
+    .glimpse-container .glimpse-animation h5:nth-child(1) {
+        bottom: 15px;
+        text-shadow: 0px -2px 5px rgba(0, 0, 0, 0.8);
+    }
+      
+    .glimpse-container .glimpse-animation h5:nth-child(2) {
+        translate: 40px 0;
+        transform: rotateZ(60deg);
+        text-shadow: 0px -2px 5px rgba(0, 0, 0, 0.8);
+    }
+      
+    .glimpse-container .glimpse-animation h5:nth-child(3) {
+        translate: -40px 0;
+        transform: rotateZ(-60deg);
+        text-shadow: 0px -2px 5px rgba(0, 0, 0, 0.8);
+    }
+
+    .glimpse-container .glimpse-description {
+        width: 45%;
+    }
+
+    .glimpse-container .glimpse-description h1 {
+        font-size: 2.4rem;
+    }
+}

@@ -1,0 +1,127 @@
+.navbar {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    position: fixed;
+    top: 25px;
+    height: 60px;
+    width: 100%;
+    z-index: 3000;
+    gap: 20px;
+}
+
+.navbar .brand {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 40px;
+    width: 200px;
+    border-radius: 10px;
+    background-color: rgba(255, 255, 255, 0.7);
+    backdrop-filter: blur(1px);
+    box-shadow: 0px -2px 5px rgba(0, 0, 0, 0.4);
+}
+
+.navbar .brand img {
+    height: 30px;
+    width: 30px;
+    border-radius: 10px;
+}
+
+.navbar .navbar-sections {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 40px;
+    width: 500px;
+    border-radius: 10px;
+    background-color: rgba(255, 255, 255, 0.7);
+    backdrop-filter: blur(1px);
+    box-shadow: 0px -2px 5px rgba(0, 0, 0, 0.4);
+}
+
+.navbar .navbar-sections h6 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 30px;
+    padding: 10px;
+    margin: 0;
+    letter-spacing: 1px;
+    cursor: pointer;
+}
+
+.navbar .navbar-sections h6:hover {
+    border-radius: 10px;
+    background-color: rgba(0, 0, 0, 0.1)
+}
+
+.navbar .mode {
+    position: relative;
+    top: 1px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 40px;
+    width: 200px;
+    border-radius: 10px;
+}
+
+.navbar .mode ion-icon {
+    height: 40px;
+    width: 40px;
+    border-radius: 20px;
+    cursor: pointer;
+}
+
+.navbar .mode-small {
+    display: none;
+}
+
+
+
+@media (max-width: 900px) {
+    .navbar {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .navbar .brand {
+        display: none;
+    }
+
+    .navbar .navbar-sections {
+        width: 430px;
+    }
+
+    .navbar .mode {
+        display: none;
+    }
+
+    .navbar .mode-small {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: fixed;
+        top: 550px;
+        right: 30px;
+        border-radius: 25px;
+        height: 50px;
+        width: 50px;
+        background-color: rgba(255, 255, 255, 0.3);
+        backdrop-filter: blur(1px);
+        box-shadow: 0px -2px 5px rgba(0, 0, 0, 0.4);
+        z-index: 200;
+        cursor: pointer;
+    }
+
+    .navbar .mode-small ion-icon {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 40px;
+        width: 40px;
+        border-radius: 20px;
+    }
+}

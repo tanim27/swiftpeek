@@ -161,9 +161,9 @@ useEffect(() => {
         <h1></h1>
         <div className="top-panel" style={{ transform: `translateX(${panelPositions.topPanelTranslate}%)`, transition: 'transform 0.7s ease-in-out' }}>
           <div className="panel"><video src="./assets/dennis.mp4" ref={videoRef} autoPlay muted loop></video></div>
-          <div className="panel"><img src="./assets/twice.png" alt="twice" /></div>
+          <div className="panel"><video src="./assets/bishop.mp4" ref={videoRef} autoPlay muted loop></video></div>
           <div className="panel"><video src="./assets/ans.mp4" ref={videoRef} autoPlay muted loop></video></div>
-          <div className="panel"><img src="./assets/graphichunters.png" alt="tindog" /></div>
+          <div className="panel"><video src="./assets/one-nil.mp4" ref={videoRef} autoPlay muted loop></video></div>
         </div>
 
         <div className="bottom-panel" style={{ transform: `translateX(${panelPositions.bottomPanelTranslate}%)`, transition: 'transform 0.7s ease-in-out'  }}>

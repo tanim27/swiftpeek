@@ -58,8 +58,8 @@
     /* Other styles */
     display: flex;
     justify-content: center;
-    align-items: center;
-    width: 30%;
+    align-items: start;
+    width: 50%;
     color: var(--icon-color);
 
     /* Initial styles for animation */
@@ -69,12 +69,16 @@
   
     /* Add animation class when triggered */
     &.raindrop-animation {
-      animation: raindropAnimation 0.5s ease forwards;
+      animation: raindropAnimation 0.5s ease both;
     }
 }
 
 .glimpse-container .glimpse-description h1 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
     font-size: 3rem;
+    width: 50%;
 }
 
 

@@ -58,12 +58,6 @@
 }
 
 
-
-.heading-animation {
-    animation: slideFromTop 1s ease forwards;
-    color: var(--text-color);
-}
-
 .paragraph-animation {
     animation: slideFromLeft 1s ease forwards;
     color: var(--text-color);
@@ -123,7 +117,9 @@
     width: 50%;
 }
 
-.container .writing-section h1 {
+.container .writing-section .heading-animation {
+    animation: slideFromTop 1s ease forwards;
+    color: var(--text-color);
     font-size: 4.5rem;
 }
 
@@ -181,10 +177,11 @@
     .container .writing-section {
         position: relative;
         left: 50px;
-        width: 400px;
     }
 
-    .container .writing-section h1 {
+    .container .writing-section .heading-animation {
+        width: 400px;
         font-size: 2.8rem;
     }
+
 }

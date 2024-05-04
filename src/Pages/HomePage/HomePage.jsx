@@ -11,7 +11,6 @@ function HomePage() {
         <HomeTop/>
         <HomeMiddle/>
         <HomeBottom/>
-        <Footer/>
     </div>
   )
 }

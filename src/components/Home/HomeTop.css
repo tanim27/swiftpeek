@@ -108,13 +108,14 @@
 
 .container .writing-section {
     position: relative;
-    left: 220px;
+    left: 100px;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: flex-start;
-    height: 500px;
+    height: 80vh;
     width: 50%;
+    background-color: yellow;
 }
 
 .container .writing-section .heading-animation {
@@ -159,9 +160,10 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 500px; 
+    height: 80vh; 
     width: 50%;
     z-index: -200;
+    background-color: grey;
 }
   
 .container .animation-section .stars-container {
@@ -177,6 +179,11 @@
     .container .writing-section {
         position: relative;
         left: 50px;
+        width: 100%;
+    }
+
+    .container .animation-section {
+        width: 100%;
     }
 
     .container .writing-section .heading-animation {

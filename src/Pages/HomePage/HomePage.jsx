@@ -10,7 +10,6 @@ function HomePage() {
     <div>
         <HomeTop/>
         <HomeMiddle/>
-        <HomeBottom/>
     </div>
   )
 }
